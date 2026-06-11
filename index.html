@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alex Morgan — Desenvolvedor Full Stack &amp; Designer</title>
+  <meta name="description" content="Portfólio de Alex Morgan, Desenvolvedor Full Stack &amp; Designer UI/UX baseado em Lisboa.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ═══════════════════════════════════════════════════════
+       NAVEGAÇÃO
+  ═══════════════════════════════════════════════════════ -->
+  <nav class="nav" id="nav">
+    <div class="nav__container">
+      <a href="#home" class="nav__logo">
+        <span>A</span>M
+      </a>
+
+      <ul class="nav__menu" id="nav-menu">
+        <li><a href="#home"        class="nav__link active" data-section="home">Início</a></li>
+        <li><a href="#about"       class="nav__link"        data-section="about">Sobre</a></li>
+        <li><a href="#services"    class="nav__link"        data-section="services">Serviços</a></li>
+        <li><a href="#work"        class="nav__link"        data-section="work">Trabalho</a></li>
+        <li><a href="#experience"  class="nav__link"        data-section="experience">Experiência</a></li>
+        <li><a href="#contact"     class="nav__link nav__link--cta" data-section="contact">Contacto</a></li>
+      </ul>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════════════════════════════════
+       HERO
+  ═══════════════════════════════════════════════════════ -->
+  <section class="hero" id="home">
+    <canvas class="hero__canvas" id="hero-canvas"></canvas>
+    <div class="hero__orbs" aria-hidden="true">
+      <div class="orb orb--1"></div>
+      <div class="orb orb--2"></div>
+      <div class="orb orb--3"></div>
+    </div>
+
+    <div class="hero__container">
+      <div class="hero__content" data-aos="fade-right">
+        <div class="hero__available">
+          <span class="hero__available-dot"></span>
+          Disponível para novos projetos
+        </div>
+
+        <h1 class="hero__name">
+          Alex<br><span class="hero__name-gold">Morgan</span>
+        </h1>
+
+        <p class="hero__role">
+          Sou&nbsp;<span class="typed-text" id="typed-text"></span><span class="typed-cursor">|</span>
+        </p>
+
+        <p class="hero__bio">
+          Crio experiências digitais excecionais — desde interfaces pixel-perfect
+          a sistemas backend robustos. Transformando ideias complexas em produtos que as pessoas adoram.
+        </p>
+
+        <div class="hero__actions">
+          <a href="#work" class="btn btn--gold">
+            Ver o Meu Trabalho <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="#" class="btn btn--ghost">
+            <i class="fas fa-download"></i> Baixar CV
+          </a>
+        </div>
+
+        <div class="hero__socials">
+          <a href="#" class="hero__social" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="hero__social" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="hero__social" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+          <a href="#" class="hero__social" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+
+      <div class="hero__visual" data-aos="fade-left">
+        <div class="hero__img-wrap">
+          <div class="hero__img-ring"></div>
+          <div class="hero__img-ring hero__img-ring--2"></div>
+          <div class="hero__img">
+            <img src="1-bkp-removebg-preview.png" alt="Alex Morgan" class="hero__photo">
+          </div>
+          <div class="hero__badge hero__badge--tl">
+            <i class="fas fa-code"></i>
+            <div><strong>8+</strong><span>Anos Exp.</span></div>
+          </div>
+          <div class="hero__badge hero__badge--br">
+            <i class="fas fa-star"></i>
+            <div><strong>54+</strong><span>Projetos</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="hero__scroll" aria-label="Descer">
+      <span>Descer</span>
+      <div class="hero__scroll-line"></div>
+    </a>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SOBRE
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="section__eyebrow">Quem Sou</span>
+        <h2 class="section__title">Sobre <span class="gold">Mim</span></h2>
+      </div>
+
+      <div class="about__grid">
+        <div class="about__img-col" data-aos="fade-right">
+          <div class="about__img-wrap">
+            <div class="about__img-frame"></div>
+            <div class="about__img">
+              <img src="2.jpg" alt="Alex Morgan" class="about__photo">
+            </div>
+            <div class="about__img-dots" aria-hidden="true"></div>
+            <div class="about__exp-badge">
+              <span class="about__exp-num">8</span>
+              <span class="about__exp-label">Anos de<br>Experiência</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about__body" data-aos="fade-left">
+          <h3 class="about__heading">
+            Criando experiências digitais com <em>paixão &amp; precisão</em>
+          </h3>
+          <p class="about__text">
+            Sou um desenvolvedor full-stack e designer UI/UX baseado em Lisboa, Portugal,
+            com mais de 8 anos a construir produtos digitais para clientes em todo o mundo.
+            O meu trabalho situa-se na interseção entre design e engenharia — onde a estética
+            encontra a funcionalidade real.
+          </p>
+          <p class="about__text">
+            Quando não estou a programar, encontras-me a explorar tipografia, a contribuir
+            para projetos open-source ou a mentorizar desenvolvedores júnior. Acredito que
+            um grande software começa com empatia genuína pelo utilizador final.
+          </p>
+
+          <div class="about__info">
+            <div class="about__info-row">
+              <span class="about__info-label">Nome</span>
+              <span class="about__info-val">Alex Morgan</span>
+            </div>
+            <div class="about__info-row">
+              <span class="about__info-label">Localização</span>
+              <span class="about__info-val">Lisboa, Portugal</span>
+            </div>
+            <div class="about__info-row">
+              <span class="about__info-label">Email</span>
+              <span class="about__info-val">alex@alexmorgan.dev</span>
+            </div>
+            <div class="about__info-row">
+              <span class="about__info-label">Freelance</span>
+              <span class="about__info-val gold">Disponível</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn--gold">
+            Entrar em Contacto <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats" data-aos="fade-up">
+        <div class="stat">
+          <div class="stat__num"><span class="counter" data-target="8">0</span>+</div>
+          <div class="stat__label">Anos de Experiência</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span class="counter" data-target="54">0</span>+</div>
+          <div class="stat__label">Projetos Concluídos</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span class="counter" data-target="32">0</span>+</div>
+          <div class="stat__label">Clientes Satisfeitos</div>
+        </div>
+        <div class="stat">
+          <div class="stat__num"><span class="counter" data-target="12">0</span>+</div>
+          <div class="stat__label">Prémios Ganhos</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       COMPETÊNCIAS
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="section__eyebrow">O Que Sei</span>
+        <h2 class="section__title">As Minhas <span class="gold">Competências</span></h2>
+      </div>
+
+      <div class="skills__grid">
+        <div class="skills__col" data-aos="fade-right">
+          <h3 class="skills__col-title">Frontend</h3>
+          <div class="skill"><div class="skill__head"><span>HTML / CSS</span><span>95%</span></div><div class="skill__bar"><div class="skill__fill" data-w="95"></div></div></div>
+          <div class="skill"><div class="skill__head"><span>JavaScript / TypeScript</span><span>92%</span></div><div class="skill__bar"><div class="skill__fill" data-w="92"></div></div></div>
+          <div class="skill"><div class="skill__head"><span>React / Next.js</span><span>90%</span></div><div class="skill__bar"><div class="skill__fill" data-w="90"></div></div></div>
+          <div class="skill"><div class="skill__head"><span>Vue.js</span><span>82%</span></div><div class="skill__bar"><div class="skill__fill" data-w="82"></div></div></div>
+        </div>
+        <div class="skills__col" data-aos="fade-left">
+          <h3 class="skills__col-title">Backend &amp; Ferramentas</h3>
+          <div class="skill"><div class="skill__head"><span>Node.js / Express</span><span>88%</span></div><div class="skill__bar"><div class="skill__fill" data-w="88"></div></div></div>
+          <div class="skill"><div class="skill__head"><span>PHP / Laravel</span><span>85%</span></div><div class="skill__bar"><div class="skill__fill" data-w="85"></div></div></div>
+          <div class="skill"><div class="skill__head"><span>PostgreSQL / MongoDB</span><span>80%</span></div><div class="skill__bar"><div class="skill__fill" data-w="80"></div></div></div>
+          <div class="skill"><div class="skill__head"><span>Docker / AWS</span><span>75%</span></div><div class="skill__bar"><div class="skill__fill" data-w="75"></div></div></div>
+        </div>
+      </div>
+
+      <div class="tech-tags" data-aos="fade-up">
+        <span class="tech-tag"><i class="fab fa-figma"></i> Figma</span>
+        <span class="tech-tag"><i class="fab fa-git-alt"></i> Git</span>
+        <span class="tech-tag"><i class="fab fa-python"></i> Python</span>
+        <span class="tech-tag"><i class="fas fa-mobile-alt"></i> React Native</span>
+        <span class="tech-tag"><i class="fab fa-wordpress"></i> WordPress</span>
+        <span class="tech-tag"><i class="fas fa-cube"></i> GraphQL</span>
+        <span class="tech-tag"><i class="fab fa-sass"></i> SASS</span>
+        <span class="tech-tag"><i class="fas fa-server"></i> APIs REST</span>
+        <span class="tech-tag"><i class="fab fa-docker"></i> Docker</span>
+        <span class="tech-tag"><i class="fab fa-aws"></i> AWS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       SERVIÇOS
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="section__eyebrow">O Que Ofereço</span>
+        <h2 class="section__title">Os Meus <span class="gold">Serviços</span></h2>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card__ico"><i class="fas fa-code"></i></div>
+          <div class="service-card__num">01</div>
+          <h3 class="service-card__title">Desenvolvimento Web</h3>
+          <p class="service-card__desc">Aplicações web full-stack construídas com tecnologias modernas — desde landing pages a plataformas empresariais complexas.</p>
+          <ul class="service-card__list">
+            <li>Aplicações React / Next.js</li>
+            <li>Backends Node.js &amp; PHP</li>
+            <li>APIs REST &amp; GraphQL</li>
+            <li>Otimização de Performance</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Saber Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card service-card--featured" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card__ico"><i class="fas fa-palette"></i></div>
+          <div class="service-card__num">02</div>
+          <h3 class="service-card__title">Design UI / UX</h3>
+          <p class="service-card__desc">Design centrado no utilizador que combina beleza com funcionalidade. Interfaces que encantam utilizadores e aumentam conversões.</p>
+          <ul class="service-card__list">
+            <li>Pesquisa de Utilizadores &amp; Wireframing</li>
+            <li>Protótipos de Alta Fidelidade</li>
+            <li>Sistemas de Design</li>
+            <li>Testes de Usabilidade</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Saber Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card__ico"><i class="fas fa-mobile-alt"></i></div>
+          <div class="service-card__num">03</div>
+          <h3 class="service-card__title">Desenvolvimento Mobile</h3>
+          <p class="service-card__desc">Aplicações móveis multiplataforma para iOS e Android usando React Native e as melhores práticas modernas.</p>
+          <ul class="service-card__list">
+            <li>Aplicações React Native</li>
+            <li>Publicação iOS &amp; Android</li>
+            <li>Notificações Push</li>
+            <li>Arquitetura Offline-First</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Saber Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card__ico"><i class="fas fa-layer-group"></i></div>
+          <div class="service-card__num">04</div>
+          <h3 class="service-card__title">Identidade de Marca</h3>
+          <p class="service-card__desc">Identidade de marca estratégica que comunica os seus valores e constrói reconhecimento duradouro no seu mercado.</p>
+          <ul class="service-card__list">
+            <li>Design de Logótipo</li>
+            <li>Guia de Marca</li>
+            <li>Sistemas de Identidade Visual</li>
+            <li>Materiais de Marketing</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Saber Mais <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       PORTFÓLIO
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section portfolio" id="work">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="section__eyebrow">O Meu Trabalho</span>
+        <h2 class="section__title">Projetos <span class="gold">Recentes</span></h2>
+      </div>
+
+      <div class="portfolio__filters" data-aos="fade-up">
+        <button class="pf-btn active" data-filter="all">Todos</button>
+        <button class="pf-btn" data-filter="fullstack">Full Stack</button>
+        <button class="pf-btn" data-filter="frontend">Frontend</button>
+        <button class="pf-btn" data-filter="design">Design</button>
+        <button class="pf-btn" data-filter="mobile">Mobile</button>
+      </div>
+
+      <div class="portfolio__grid" id="portfolio-grid">
+
+        <div class="p-card" data-cat="fullstack" data-aos="fade-up">
+          <div class="p-card__img p-card__img--1">
+            <i class="fas fa-shopping-bag"></i>
+            <div class="p-card__overlay">
+              <a href="#" aria-label="Demo ao vivo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <span class="p-card__cat">Full Stack</span>
+            <h3 class="p-card__title">ShopNova — Plataforma E-Commerce</h3>
+            <p class="p-card__desc">E-commerce em React + Node.js com inventário em tempo real e recomendações por IA.</p>
+            <div class="p-card__tech"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-cat="mobile" data-aos="fade-up" data-aos-delay="80">
+          <div class="p-card__img p-card__img--2">
+            <i class="fas fa-university"></i>
+            <div class="p-card__overlay">
+              <a href="#" aria-label="Demo ao vivo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <span class="p-card__cat">Mobile</span>
+            <h3 class="p-card__title">FinFlow — Aplicação Bancária</h3>
+            <p class="p-card__desc">Banco móvel multiplataforma com autenticação biométrica e transações em tempo real.</p>
+            <div class="p-card__tech"><span>React Native</span><span>Firebase</span><span>Stripe</span></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-cat="design" data-aos="fade-up" data-aos-delay="160">
+          <div class="p-card__img p-card__img--3">
+            <i class="fas fa-pencil-ruler"></i>
+            <div class="p-card__overlay">
+              <a href="#" aria-label="Demo ao vivo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <span class="p-card__cat">Design</span>
+            <h3 class="p-card__title">Aurum — Identidade de Marca</h3>
+            <p class="p-card__desc">Identidade de marca completa para uma marca de relógios de luxo — logótipo, sistema e guidelines.</p>
+            <div class="p-card__tech"><span>Figma</span><span>Illustrator</span><span>Photoshop</span></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-cat="fullstack" data-aos="fade-up">
+          <div class="p-card__img p-card__img--4">
+            <i class="fas fa-chart-line"></i>
+            <div class="p-card__overlay">
+              <a href="#" aria-label="Demo ao vivo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <span class="p-card__cat">Full Stack</span>
+            <h3 class="p-card__title">Dashify — Análise SaaS</h3>
+            <p class="p-card__desc">Dashboard de análise em tempo real com widgets personalizáveis e colaboração em equipa.</p>
+            <div class="p-card__tech"><span>Next.js</span><span>GraphQL</span><span>MongoDB</span></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-cat="frontend" data-aos="fade-up" data-aos-delay="80">
+          <div class="p-card__img p-card__img--5">
+            <i class="fas fa-plane"></i>
+            <div class="p-card__overlay">
+              <a href="#" aria-label="Demo ao vivo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <span class="p-card__cat">Frontend</span>
+            <h3 class="p-card__title">Wanderlust — Plataforma de Viagens</h3>
+            <p class="p-card__desc">Reserva de viagens imersiva com integração de mapa 3D e pesquisa inteligente por IA.</p>
+            <div class="p-card__tech"><span>Vue.js</span><span>Three.js</span><span>Mapbox</span></div>
+          </div>
+        </div>
+
+        <div class="p-card" data-cat="design" data-aos="fade-up" data-aos-delay="160">
+          <div class="p-card__img p-card__img--6">
+            <i class="fas fa-utensils"></i>
+            <div class="p-card__overlay">
+              <a href="#" aria-label="Demo ao vivo"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="p-card__body">
+            <span class="p-card__cat">Design</span>
+            <h3 class="p-card__title">Bistro Noir — Restaurante</h3>
+            <p class="p-card__desc">Website elegante de restaurante com sistema de reservas online e gestão de menu.</p>
+            <div class="p-card__tech"><span>HTML/CSS</span><span>JavaScript</span><span>PHP</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       EXPERIÊNCIA
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="section__eyebrow">O Meu Percurso</span>
+        <h2 class="section__title">Experiência &amp; <span class="gold">Formação</span></h2>
+      </div>
+
+      <div class="exp__grid">
+
+        <div class="exp__col" data-aos="fade-right">
+          <h3 class="exp__col-title"><i class="fas fa-briefcase"></i> Experiência Profissional</h3>
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-period">2021 — Presente</span>
+                <h4 class="tl-role">Desenvolvedor Full Stack Sénior</h4>
+                <span class="tl-org">TechVision Labs, Lisboa</span>
+                <p class="tl-desc">Liderou o desenvolvimento de uma plataforma SaaS de 2M€ com mais de 50k utilizadores. Arquitetou microsserviços reduzindo a latência em 40%.</p>
+                <div class="tl-tags"><span>React</span><span>Node.js</span><span>AWS</span></div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-period">2018 — 2021</span>
+                <h4 class="tl-role">Desenvolvedor Frontend</h4>
+                <span class="tl-org">PixelCraft Agency, Porto</span>
+                <p class="tl-desc">Criou experiências web interativas para clientes internacionais. Entregou mais de 20 projetos em e-commerce, fintech e media.</p>
+                <div class="tl-tags"><span>Vue.js</span><span>GSAP</span><span>PHP</span></div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-period">2016 — 2018</span>
+                <h4 class="tl-role">Desenvolvedor Júnior</h4>
+                <span class="tl-org">StartupHub Incubator</span>
+                <p class="tl-desc">Contribuiu para 3 produtos de startups em fase inicial, adquirindo experiência prática em prototipagem rápida e desenvolvimento ágil.</p>
+                <div class="tl-tags"><span>JavaScript</span><span>MySQL</span><span>React</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="exp__col" data-aos="fade-left">
+          <h3 class="exp__col-title"><i class="fas fa-graduation-cap"></i> Formação Académica</h3>
+          <div class="timeline">
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-period">2014 — 2016</span>
+                <h4 class="tl-role">Mestrado em Ciências da Computação</h4>
+                <span class="tl-org">Universidade de Lisboa</span>
+                <p class="tl-desc">Especialização em Interação Humano-Computador e Sistemas Distribuídos. Concluído com Distinção (18/20).</p>
+                <div class="tl-tags"><span>IHC</span><span>Algoritmos</span><span>Investigação</span></div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-period">2011 — 2014</span>
+                <h4 class="tl-role">Licenciatura em Sistemas de Informação</h4>
+                <span class="tl-org">ISCTE — Instituto Universitário de Lisboa</span>
+                <p class="tl-desc">Base em engenharia de software, bases de dados e análise de sistemas. Projeto final premiado sobre acessibilidade.</p>
+                <div class="tl-tags"><span>POO</span><span>Bases de Dados</span><span>UML</span></div>
+              </div>
+            </div>
+
+            <div class="tl-item">
+              <div class="tl-dot"></div>
+              <div class="tl-body">
+                <span class="tl-period">2022</span>
+                <h4 class="tl-role">Arquiteto de Soluções AWS</h4>
+                <span class="tl-org">Amazon Web Services — Profissional</span>
+                <p class="tl-desc">Certificação profissional em arquitetura cloud, segurança e design de infraestrutura escalável na AWS.</p>
+                <div class="tl-tags"><span>Cloud</span><span>Segurança</span><span>DevOps</span></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       TESTEMUNHOS
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section testimonials" id="testimonials">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="section__eyebrow">O Que Dizem</span>
+        <h2 class="section__title">Testemunhos de <span class="gold">Clientes</span></h2>
+      </div>
+
+      <div class="testi__wrap" data-aos="fade-up">
+        <div class="testi__slider" id="testi-slider">
+
+          <div class="testi-slide active">
+            <div class="testi__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <blockquote class="testi__quote">
+              "O Alex entregou uma plataforma que superou todas as expectativas. A atenção ao detalhe —
+              desde os fluxos de UX até à arquitetura de backend — foi verdadeiramente excecional.
+              A nossa taxa de conversão aumentou 34% no primeiro mês após o lançamento."
+            </blockquote>
+            <div class="testi__author">
+              <div class="testi__avatar">SC</div>
+              <div>
+                <span class="testi__name">Sofia Carvalho</span>
+                <span class="testi__role">CEO, ShopNova</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <blockquote class="testi__quote">
+              "Trabalhar com o Alex na nossa aplicação móvel foi uma experiência fantástica. Ele trouxe
+              excelência técnica e resolução criativa de problemas a cada desafio. A aplicação foi
+              entregue a tempo e a qualidade do código é excecional — a melhor colaboração que já tive."
+            </blockquote>
+            <div class="testi__author">
+              <div class="testi__avatar">MR</div>
+              <div>
+                <span class="testi__name">Marco Ribeiro</span>
+                <span class="testi__role">CTO, FinFlow</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testi-slide">
+            <div class="testi__stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+              <i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <blockquote class="testi__quote">
+              "O Alex redesenhou toda a nossa identidade de marca e website. O resultado é deslumbrante —
+              moderno, distinto e perfeitamente alinhado com o nosso posicionamento de luxo.
+              Altamente recomendado para qualquer projeto de design exigente."
+            </blockquote>
+            <div class="testi__author">
+              <div class="testi__avatar">LP</div>
+              <div>
+                <span class="testi__name">Laura Pinto</span>
+                <span class="testi__role">Fundadora, Aurum Watches</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="testi__nav">
+          <button class="testi__arrow" id="testi-prev" aria-label="Anterior"><i class="fas fa-arrow-left"></i></button>
+          <div class="testi__dots" id="testi-dots">
+            <button class="testi__dot active" data-i="0"></button>
+            <button class="testi__dot" data-i="1"></button>
+            <button class="testi__dot" data-i="2"></button>
+          </div>
+          <button class="testi__arrow" id="testi-next" aria-label="Seguinte"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       CONTACTO
+  ═══════════════════════════════════════════════════════ -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__head" data-aos="fade-up">
+        <span class="section__eyebrow">Entrar em Contacto</span>
+        <h2 class="section__title">Vamos Trabalhar <span class="gold">Juntos</span></h2>
+      </div>
+
+      <div class="contact__grid">
+        <div class="contact__info" data-aos="fade-right">
+          <p class="contact__intro">
+            Tem um projeto em mente ou quer discutir uma oportunidade?
+            Estou sempre aberto a desafios interessantes e colaborações.
+          </p>
+
+          <div class="contact__items">
+            <div class="contact__item">
+              <div class="contact__ico"><i class="fas fa-envelope"></i></div>
+              <div>
+                <span class="contact__lbl">Email</span>
+                <a href="mailto:alex@alexmorgan.dev" class="contact__val">alex@alexmorgan.dev</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__ico"><i class="fas fa-phone"></i></div>
+              <div>
+                <span class="contact__lbl">Telefone</span>
+                <a href="tel:+351910000000" class="contact__val">+351 910 000 000</a>
+              </div>
+            </div>
+            <div class="contact__item">
+              <div class="contact__ico"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <span class="contact__lbl">Localização</span>
+                <span class="contact__val">Lisboa, Portugal</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__socials">
+            <a href="#" class="contact__soc" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="contact__soc" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="contact__soc" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            <a href="#" class="contact__soc" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+
+        <form class="contact__form" id="contact-form" novalidate data-aos="fade-left">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="f-name">O Seu Nome</label>
+              <input type="text" id="f-name" name="name" placeholder="João Silva" required>
+            </div>
+            <div class="form-group">
+              <label for="f-email">Endereço de Email</label>
+              <input type="email" id="f-email" name="email" placeholder="joao@exemplo.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="f-subject">Assunto</label>
+            <input type="text" id="f-subject" name="subject" placeholder="Consulta de Projeto">
+          </div>
+          <div class="form-group">
+            <label for="f-budget">Faixa de Orçamento</label>
+            <select id="f-budget" name="budget">
+              <option value="">Selecionar orçamento...</option>
+              <option>Menos de €1.000</option>
+              <option>€1.000 — €5.000</option>
+              <option>€5.000 — €15.000</option>
+              <option>€15.000+</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="f-message">Mensagem</label>
+            <textarea id="f-message" name="message" rows="5" placeholder="Fale-me sobre o seu projeto..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--gold btn--full">
+            Enviar Mensagem <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-status" id="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════════════════════════
+       RODAPÉ
+  ═══════════════════════════════════════════════════════ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#home" class="footer__logo">AM</a>
+          <p class="footer__tagline">Criando experiências digitais com paixão &amp; precisão.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#work">Trabalho</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Serviços</h4>
+          <ul>
+            <li><a href="#">Desenvolvimento Web</a></li>
+            <li><a href="#">Design UI/UX</a></li>
+            <li><a href="#">Aplicações Mobile</a></li>
+            <li><a href="#">Identidade de Marca</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <ul>
+            <li><a href="mailto:alex@alexmorgan.dev">alex@alexmorgan.dev</a></li>
+            <li><a href="tel:+351910000000">+351 910 000 000</a></li>
+            <li>Lisboa, Portugal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        <p>&copy; 2026 Alex Morgan. Todos os direitos reservados.</p>
+        <p>Desenhado &amp; Desenvolvido com <span class="gold">&#9829;</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="btt" id="btt" aria-label="Voltar ao topo"><i class="fas fa-chevron-up"></i></button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
